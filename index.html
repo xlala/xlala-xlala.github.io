@@ -418,7 +418,7 @@
                 
               
 
-              <time title="创建时间：2019-06-12 12:04:26 / 修改时间：16:49:42" itemprop="dateCreated datePublished" datetime="2019-06-12T12:04:26+08:00">2019-06-12</time>
+              <time title="创建时间：2019-06-12 12:04:26 / 修改时间：16:50:40" itemprop="dateCreated datePublished" datetime="2019-06-12T12:04:26+08:00">2019-06-12</time>
             
 
             
@@ -476,209 +476,22 @@
 
       
         
-          
-            <a id="more"></a>
-<h1 id="Laravel-笔记"><a href="#Laravel-笔记" class="headerlink" title="Laravel 笔记"></a>Laravel 笔记</h1><h2 id="1-环境安装"><a href="#1-环境安装" class="headerlink" title="1 环境安装"></a>1 环境安装</h2><h3 id="1-1-PHP"><a href="#1-1-PHP" class="headerlink" title="1.1 PHP"></a>1.1 PHP</h3><h4 id="1-1-1-安装PHP7-2"><a href="#1-1-1-安装PHP7-2" class="headerlink" title="1.1.1 安装PHP7.2"></a>1.1.1 安装PHP7.2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install software-properties-common python-software-properties </span><br><span class="line">sudo add-apt-repository ppa:ondrej/php &amp;&amp; sudo apt-get update</span><br><span class="line">sudo apt-get -y install php7.2</span><br></pre></td></tr></table></figure>
+          <h1 id="Laravel-笔记"><a href="#Laravel-笔记" class="headerlink" title="Laravel 笔记"></a>Laravel 笔记</h1><h2 id="1-环境安装"><a href="#1-环境安装" class="headerlink" title="1 环境安装"></a>1 环境安装</h2><h3 id="1-1-PHP"><a href="#1-1-PHP" class="headerlink" title="1.1 PHP"></a>1.1 PHP</h3><h4 id="1-1-1-安装PHP7-2"><a href="#1-1-1-安装PHP7-2" class="headerlink" title="1.1.1 安装PHP7.2"></a>1.1.1 安装PHP7.2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install software-properties-common python-software-properties </span><br><span class="line">sudo add-apt-repository ppa:ondrej/php &amp;&amp; sudo apt-get update</span><br><span class="line">sudo apt-get -y install php7.2</span><br></pre></td></tr></table></figure>
 
 <h4 id="1-1-2-如果之前有其他版本PHP，在这边禁用掉"><a href="#1-1-2-如果之前有其他版本PHP，在这边禁用掉" class="headerlink" title="1.1.2 如果之前有其他版本PHP，在这边禁用掉"></a>1.1.2 如果之前有其他版本PHP，在这边禁用掉</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo a2dismod php5</span><br><span class="line">sudo a2enmod php7.2</span><br></pre></td></tr></table></figure>
 
 <h4 id="1-1-3-安装常用扩展"><a href="#1-1-3-安装常用扩展" class="headerlink" title="1.1.3 安装常用扩展"></a>1.1.3 安装常用扩展</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php7.2-fpm php7.2-mysql php7.2-curl php7.2-json php7.2-mbstring php7.2-xml  php7.2-intl</span><br></pre></td></tr></table></figure>
 
 <h4 id="1-1-4-安装其他扩展（按需安装）"><a href="#1-1-4-安装其他扩展（按需安装）" class="headerlink" title="1.1.4 安装其他扩展（按需安装）"></a>1.1.4 安装其他扩展（按需安装）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install php7.2-gd</span><br><span class="line">sudo apt-get install php7.2-soap</span><br><span class="line">sudo apt-get install php7.2-gmp</span><br><span class="line">sudo apt-get install php7.2-odbc       </span><br><span class="line">sudo apt-get install php7.2-pspell     </span><br><span class="line">sudo apt-get install php7.2-bcmath   </span><br><span class="line">sudo apt-get install php7.2-enchant    </span><br><span class="line">sudo apt-get install php7.2-imap       </span><br><span class="line">sudo apt-get install php7.2-ldap       </span><br><span class="line">sudo apt-get install php7.2-opcache</span><br><span class="line">sudo apt-get install php7.2-readline   </span><br><span class="line">sudo apt-get install php7.2-sqlite3    </span><br><span class="line">sudo apt-get install php7.2-xmlrpc</span><br><span class="line">sudo apt-get install php7.2-bz2</span><br><span class="line">sudo apt-get install php7.2-interbase</span><br><span class="line">sudo apt-get install php7.2-pgsql      </span><br><span class="line">sudo apt-get install php7.2-recode     </span><br><span class="line">sudo apt-get install php7.2-sybase     </span><br><span class="line">sudo apt-get install php7.2-xsl</span><br><span class="line">sudo apt-get install php7.2-cgi        </span><br><span class="line">sudo apt-get install php7.2-dba </span><br><span class="line">sudo apt-get install php7.2-phpdbg     </span><br><span class="line">sudo apt-get install php7.2-snmp       </span><br><span class="line">sudo apt-get install php7.2-tidy </span><br><span class="line">sudo apt-get install php7.2-zip</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-Composer安装"><a href="#1-2-Composer安装" class="headerlink" title="1.2. Composer安装"></a>1.2. Composer安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install composer</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-Laravel安装"><a href="#1-3-Laravel安装" class="headerlink" title="1.3. Laravel安装"></a>1.3. Laravel安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer global require <span class="string">"laravel/installer"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-laradock安装"><a href="#1-4-laradock安装" class="headerlink" title="1.4 laradock安装"></a>1.4 laradock安装</h3><ol>
-<li>克隆laradock项目</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/Laradock/laradock.git</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>env-example<code>to</code>.env</p>
-<ol>
-<li>配置应用目录 ../</li>
-<li>PHP版本</li>
-</ol>
-</li>
-<li><p>启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d nginx mysql phpmyadmin redis workspace</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="2-Laravel项目"><a href="#2-Laravel项目" class="headerlink" title="2. Laravel项目"></a>2. Laravel项目</h2><p>Laravel项目MVC架构</p>
-<p><img src="https://fsdhubcdn.phphub.org/uploads/images/201705/13/1/VptHggpp0v.png" alt></p>
-<p>创建项目两种途径，laravel和composer.</p>
-<ul>
-<li>laravel new blog</li>
-<li>composer create-project –prefer-dist laravel/laravel blog “5.5.*”</li>
-</ul>
-<p>项目目录主要结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">blog</span><br><span class="line"> |_app</span><br><span class="line">    |_Http</span><br><span class="line">       |_Controllers</span><br><span class="line">    |_Models</span><br><span class="line">    |_Notifications</span><br><span class="line">    |_Policies</span><br><span class="line">    |_Providers</span><br><span class="line"> |_config</span><br><span class="line"> |_database</span><br><span class="line">    |_factories</span><br><span class="line">    |_migrations</span><br><span class="line">    |_seeds</span><br><span class="line"> |_laradock</span><br><span class="line"> |_public</span><br><span class="line">    |_css</span><br><span class="line">    |_js</span><br><span class="line">    |_svg</span><br><span class="line"> |_resouces</span><br><span class="line">    |_js</span><br><span class="line">    |_lang</span><br><span class="line">    |_sass</span><br><span class="line">    |_views</span><br><span class="line"> |_routes</span><br><span class="line"> |_vendor</span><br><span class="line"> .env</span><br><span class="line"> composer.json</span><br><span class="line"> package.json</span><br></pre></td></tr></table></figure>
-
-<p>Laravel 文件夹结构简介:</p>
-<table>
-<thead>
-<tr>
-<th>文件夹名称</th>
-<th>简介</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>app</td>
-<td>应用程序的业务逻辑代码存放文件夹</td>
-</tr>
-<tr>
-<td>app/Console</td>
-<td>存放自定义 Artisan 命令文件</td>
-</tr>
-<tr>
-<td>app/Http/Controllers</td>
-<td>存放控制器文件</td>
-</tr>
-<tr>
-<td>app/Http/Middleware</td>
-<td>存放「中间件」文件</td>
-</tr>
-<tr>
-<td>bootstrap</td>
-<td>框架启动与自动加载设置相关的文件</td>
-</tr>
-<tr>
-<td>composer.json</td>
-<td>应用依赖的扩展包</td>
-</tr>
-<tr>
-<td>composer.lock</td>
-<td>扩展包列表，确保这个应用的副本使用相同版本的扩展包</td>
-</tr>
-<tr>
-<td>config</td>
-<td>应用程序的配置文件</td>
-</tr>
-<tr>
-<td>database</td>
-<td>数据库操作相关文件（数据库迁移和数据填充）</td>
-</tr>
-<tr>
-<td>node_modules</td>
-<td>存放 NPM 依赖模块</td>
-</tr>
-<tr>
-<td>package.json</td>
-<td>应用所需的 NPM 包配置文件</td>
-</tr>
-<tr>
-<td>phpunit.xml</td>
-<td>测试工具 PHPUnit 的配置文件</td>
-</tr>
-<tr>
-<td>public</td>
-<td>前端控制器和资源相关文件（图片、JavaScript、CSS）</td>
-</tr>
-<tr>
-<td>readme.md</td>
-<td>项目介绍说明文件</td>
-</tr>
-<tr>
-<td>resources</td>
-<td>应用资源</td>
-</tr>
-<tr>
-<td>resources/assets</td>
-<td>未编译的应用资源文件（图片、JavaScript、CSS）</td>
-</tr>
-<tr>
-<td>resources/lang</td>
-<td>多语言文件</td>
-</tr>
-<tr>
-<td>resources/views</td>
-<td>视图文件</td>
-</tr>
-<tr>
-<td>routes/api.php</td>
-<td>用于定义 API 类型的路由</td>
-</tr>
-<tr>
-<td>routes/channels.php</td>
-<td>事件转播注册信息</td>
-</tr>
-<tr>
-<td>routes/console.php</td>
-<td>用于定义 Artisan 命令</td>
-</tr>
-<tr>
-<td>routes/web.php</td>
-<td>用于定义 Web 类型的路由（重点，大部分情况下本书会用到）</td>
-</tr>
-<tr>
-<td>server.php</td>
-<td>使用 PHP 内置服务器时的 URL 重写（类似于 Apache 的 “mod_rewrite” ）</td>
-</tr>
-<tr>
-<td>storage</td>
-<td>编译后的视图、基于会话、文件缓存和其它框架生成的文件</td>
-</tr>
-<tr>
-<td>storage/app</td>
-<td>目录可用于存储应用程序使用的任何文件</td>
-</tr>
-<tr>
-<td>storage/framework</td>
-<td>目录被用于保存框架生成的文件及缓存</td>
-</tr>
-<tr>
-<td>storage/logs</td>
-<td>应用程序的日志文件</td>
-</tr>
-<tr>
-<td>tests</td>
-<td>应用测试相关文件</td>
-</tr>
-<tr>
-<td>vendor</td>
-<td>Composer 依赖模块</td>
-</tr>
-<tr>
-<td>webpack.mix.js</td>
-<td>Laravel 的前端工作流配置文件</td>
-</tr>
-<tr>
-<td>yarn.lock</td>
-<td>Yarn 依赖版本锁定文件</td>
-</tr>
-<tr>
-<td>.gitignore</td>
-<td>被 Git 所忽略的文件</td>
-</tr>
-<tr>
-<td>.env</td>
-<td>环境变量配置文件</td>
-</tr>
-</tbody></table>
-<h3 id="2-1-配置项目"><a href="#2-1-配置项目" class="headerlink" title="2.1 配置项目"></a>2.1 配置项目</h3><p>将laradock项目克隆到laravel项目下，启动LAMP环境，登录到workspace容器，执行PHP命令。</p>
-<p>重命名项目.env.example -&gt; .env</p>
-<ul>
-<li><p>配置.env</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DB_HOST=192.168.1.82</span><br><span class="line">REDIS_HOST=192.168.1.82</span><br><span class="line">QUEUE_HOST=192.168.1.82</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>php artisan key:generate</p>
-</li>
-<li><p>chmod -R 777 blog</p>
-</li>
-<li><p>在workspace环境中，运行artisan创建代码后，需要到外面重新做chmod</p>
-</li>
-<li><p>mysql认证问题</p>
-<p>  The server requested authentication method unknown to the client</p>
-<p>修改my.cnf</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">default_authentication_plugin=mysql_native_password</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/12/larvel环境安装结构/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
